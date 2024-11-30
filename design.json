@@ -1,0 +1,399 @@
+[
+    {
+        "tag": "about",
+        "patterns": [
+            "Who are you",
+            "What can you do",
+            "What are you",
+            "What's your purpose"
+        ],
+        "responses": [
+            "I'm a Aura chatbot here to assist you with anything you need.",
+            "My purpose is to help you by answering questions and providing support.",
+            "I'm here to assist you with tasks, answer your questions, and more."
+        ]
+    },
+    {
+        "tag": "help",
+        "patterns": [
+            "I need help",
+            "Can you help me",
+            "Help me out",
+            "What should I do"
+        ],
+        "responses": [
+            "Of course! What do you need assistance with?",
+            "I'm here for you. How can I help?",
+            "Feel free to tell me what you need help with, and I'll assist you."
+        ]
+    },
+    {
+        "tag": "thanks",
+        "patterns": [
+            "Thank you",
+            "Thanks a lot",
+            "Thanks so much",
+            "I appreciate it"
+        ],
+        "responses": [
+            "You're very welcome!",
+            "Glad I could help!",
+            "No problem at all, happy to assist!"
+        ]
+    },
+    {
+        "tag": "weather",
+        "patterns": [
+            "How's the weather today?",
+            "What's the weather like?"
+        ],
+        "responses": [
+            "I can't give you real-time weather updates, but you can easily check on a weather app or website.",
+            "Unfortunately, I can't provide current weather data. You can find up-to-date information online."
+        ]
+    },
+    {
+        "tag": "greeting",
+        "patterns": [
+            "Hi",
+            "Hello",
+            "Hey",
+            "How's it going?",
+            "What's up?"
+        ],
+        "responses": [
+            "Hello there!",
+            "Hey, how's it going?",
+            "Hi! I'm here if you need anything.",
+            "I'm doing great, thank you for asking!"
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": [
+            "Goodbye",
+            "See you later",
+            "Take care",
+            "Bye"
+        ],
+        "responses": [
+            "Goodbye, take care!",
+            "See you later!",
+            "Take care! Have a great day.",
+            "Catch you later!"
+        ]
+    },
+    {
+        "tag": "age",
+        "patterns": [
+            "How old are you?",
+            "What's your age?"
+        ],
+        "responses": [
+            "I don't have an age—I'm just a chatbot I dont have a gender!",
+            "I don't age; I exist in the digital world.",
+            "Age doesn't apply to me—I'm always here to help!"
+        ]
+    },
+    {
+        "tag": "budget",
+        "patterns": [
+            "How do I create a budget?",
+            "What's a good way to manage my finances?",
+            "Can you help me with budgeting?"
+        ],
+        "responses": [
+            "To create a budget, start by tracking your income and expenses. After that, set aside amounts for essentials like rent, food, and bills. Then, think about saving for the future and paying down any debts.",
+            "A great strategy is the 50/30/20 rule—50% for needs, 30% for wants, and 20% for savings or debt repayment.",
+            "You can start by setting clear financial goals. Then, track your income and expenses over a month or two, and divide your funds into essential costs, savings, and discretionary spending."
+        ]
+    },
+    {
+        "tag": "name",
+        "patterns": [
+            "What's your name?",
+            "Do you have a name?",
+            "What should I call you?"
+        ],
+        "responses": [
+            "You can call me Chatbot!",
+            "I go by Chatbot."
+        ]
+    },
+    {
+        "tag": "credit_score",
+        "patterns": [
+            "What is a credit score?",
+            "How do I check my credit score?",
+            "How can I improve my credit score?"
+        ],
+        "responses": [
+            "A credit score is a number that shows your creditworthiness, based on your credit history. Lenders use it to decide if they will lend you money. The higher the score, the better the chances of getting approved for credit.",
+            "To check your credit score, you can visit websites like Credit Karma or Credit Sesame, which offer free access."
+        ]
+    },
+    {
+        "tag": "hobby",
+        "patterns": [
+            "What do you do for fun?",
+            "Do you have any hobbies?"
+        ],
+        "responses": [
+            "I don’t have hobbies as I’m always here to assist you!",
+            "My favorite thing to do is chat with you and help out however I can."
+        ]
+    },
+    {
+        "tag": "favorite_color",
+        "patterns": [
+            "What's your favorite color?",
+            "Do you like any color?"
+        ],
+        "responses": [
+            "I don't have a favorite color since I’m a chatbot.",
+            "As an AI, I don't have personal preferences like humans do."
+        ]
+    },
+    {
+        "tag": "food",
+        "patterns": [
+            "What's your favorite food?",
+            "Do you like to eat?",
+            "Tell me about food."
+        ],
+        "responses": [
+            "I don’t eat, but I’m always happy to help you with food-related questions!",
+            "I can’t taste food, but I can help you with recipes, restaurant suggestions, or any food-related information."
+        ]
+    },
+    {
+        "tag": "joke",
+        "patterns": [
+            "Tell me a joke!",
+            "Do you know any jokes?",
+            "Make me laugh!"
+        ],
+        "responses": [
+            "Why don’t scientists trust atoms? Because they make up everything!",
+            "Why don't skeletons fight each other? They don’t have the guts!",
+            "Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them!"
+        ]
+    },
+    {
+        "tag": "movies",
+        "patterns": [
+            "What's your favorite movie?",
+            "Recommend me a movie.",
+            "Tell me about movies."
+        ],
+        "responses": [
+            "I don’t watch movies, but I can suggest some popular ones like *The Shawshank Redemption*, *Inception*, or *The Godfather*!",
+            "I don't have movie preferences, but I can help you find one based on what you're in the mood for."
+        ]
+    },
+    {
+        "tag": "technology",
+        "patterns": [
+            "What's the latest tech news?",
+            "Tell me about technology.",
+            "What's new in tech?"
+        ],
+        "responses": [
+            "I can’t provide real-time tech news, but you can check out the latest updates on tech blogs or news websites.",
+            "Technology is always evolving, and staying updated through tech blogs or news sites is the best way to know what’s new!"
+        ]
+    },
+    {
+        "tag": "time",
+        "patterns": [
+            "What's the time?",
+            "Can you tell me the time?"
+        ],
+        "responses": [
+            "I don't have access to the current time, but you can check it on your device or any clock nearby.",
+            "Sorry, I can’t provide real-time data like the current time, but it’s easy to find on your phone or computer."
+        ]
+    },
+    {
+        "tag": "compliment",
+        "patterns": [
+            "You're awesome!",
+            "You're great!",
+            "I like you!"
+        ],
+        "responses": [
+            "Thank you! I’m just here to help and make your experience better.",
+            "I’m glad you think so! My main goal is to assist and provide helpful information."
+        ]
+    },
+    {
+        "tag": "meaning_of_life",
+        "patterns": [
+            "What is the meaning of life?",
+            "Why are we here?",
+            "What's the purpose of life?"
+        ],
+        "responses": [
+            "The meaning of life is a complex and philosophical question. Different cultures and individuals have various beliefs about it.",
+            "Life's purpose is subjective and varies from person to person. For many, purpose is found in relationships, personal growth, or helping others."
+        ]
+    },
+    {
+        "tag": "sports",
+        "patterns": [
+            "Tell me about sports.",
+            "What's your favorite sport?",
+            "Any sports news?"
+        ],
+        "responses": [
+            "While I don't have personal preferences, sports can be a lot of fun to follow! For the latest updates, check sports news sites.",
+            "Sports are great for staying active and having fun. There are so many different sports to explore and enjoy!"
+        ]
+    },
+    {
+        "tag": "pets",
+        "patterns": [
+            "Do you have any pets?",
+            "Tell me about pets.",
+            "Do you like animals?"
+        ],
+        "responses": [
+            "As a chatbot, I don’t have pets, but I can help you with any questions you have about them!",
+            "Pets bring a lot of joy to our lives. Many people love their dogs, cats, birds, and other animals."
+        ]
+    },
+    {
+        "tag": "travel",
+        "patterns": [
+            "Where's a good place to travel?",
+            "Recommend me a travel destination.",
+            "Tell me about your favorite travel spot."
+        ],
+        "responses": [
+            "I don't travel, but there are so many beautiful places around the world. It depends on your preferences—whether you're into beaches, mountains, or vibrant cities.",
+            "Traveling opens up opportunities to experience new cultures, try diverse foods, and create unforgettable memories!"
+        ]
+    },
+    {
+        "tag": "books",
+        "patterns": [
+            "What's your favorite book?",
+            "Recommend me a book to read.",
+            "Tell me about books."
+        ],
+        "responses": [
+            "I don't have a favorite book, but there are countless great books in all genres. Popular ones include *Harry Potter*, *To Kill a Mockingbird*, and *1984*.",
+            "Reading books is a wonderful way to gain knowledge, spark creativity, and relax."
+        ]
+    },
+    {
+        "tag": "education",
+        "patterns": [
+            "Tell me about education.",
+            "What's the importance of education?",
+            "How to study effectively?"
+        ],
+        "responses": [
+            "Education is the process of acquiring knowledge, skills, and values. It’s essential for personal and societal growth.",
+            "To study effectively, set clear goals, create a quiet study environment, stay organized, take breaks, and don't hesitate to ask for help when needed."
+        ]
+    },
+    {
+        "tag": "health",
+        "patterns": [
+            "How to stay healthy?",
+            "Tell me about health tips.",
+            "What's the importance of fitness?"
+        ],
+        "responses": [
+            "To stay healthy, maintain a balanced diet, exercise regularly, sleep well, manage stress, and avoid harmful habits.",
+            "Fitness is important for your overall health. It helps improve mood, energy levels, and longevity."
+        ]
+    },
+    {
+        "tag": "coding",
+        "patterns": [
+            "Tell me about coding.",
+            "How do I start coding?",
+            "What's the best programming language?"
+        ],
+        "responses": [
+            "Coding is the process of writing instructions for computers. It powers all sorts of software, apps, and websites.",
+            "To get started with coding, you can learn languages like Python, Java, or JavaScript. There are lots of online tutorials and resources to help you begin."
+        ]
+    },
+    {
+        "tag": "art",
+        "patterns": [
+            "Tell me about art.",
+            "What's your favorite artwork?",
+            "How to appreciate art?"
+        ],
+        "responses": [
+            "Art is an expression of ideas and emotions through various forms like painting, sculpture, music, and literature.",
+            "To appreciate art, observe the details, understand its context, and explore different styles and movements."
+        ]
+    },
+    {
+        "tag": "career",
+        "patterns": [
+            "How to find a job?",
+            "Tell me about career development.",
+            "What's the best career advice?"
+        ],
+        "responses": [
+            "To find a job, focus on your skills and passions, create a strong resume, network with others, and apply to jobs that fit your qualifications.",
+            "Career development is about setting goals, learning new skills, seeking mentorship, and staying adaptable to changes in the job market."
+        ]
+    },
+    {
+        "tag": "technology_help",
+        "patterns": [
+            "How can you assist with technology?",
+            "Tell me about tech support.",
+            "Can you help with computer issues?"
+        ],
+        "responses": [
+            "I can provide guidance on common tech problems, but for complex issues, it's best to contact a professional.",
+            "I'm here to help with basic troubleshooting. For more complicated tech issues, reaching out to an IT expert might be a good idea."
+        ]
+    },
+    {
+        "tag": "history",
+        "patterns": [
+            "Tell me about history.",
+            "What's your favorite historical period?",
+            "How can I learn about historical events?"
+        ],
+        "responses": [
+            "History is the study of past events and civilizations. It helps us understand where we come from and how we got here.",
+            "To learn about history, try reading books, watching documentaries, visiting museums, or attending lectures."
+        ]
+    },
+    {
+        "tag": "music",
+        "patterns": [
+            "What's your favorite music?",
+            "Recommend me a song.",
+            "Tell me about music genres."
+        ],
+        "responses": [
+            "I don't have personal preferences, but there are many music genres like pop, rock, classical, jazz, and more.",
+            "Music can uplift your mood, inspire creativity, and bring people together across cultures."
+        ]
+    },
+    {
+        "tag": "exercise",
+        "patterns": [
+            "How to stay fit?",
+            "Tell me about exercise.",
+            "What's the importance of physical activity?"
+        ],
+        "responses": [
+            "To stay fit, combine cardio, strength training, flexibility exercises, and maintain a balanced diet.",
+            "Exercise is crucial for physical health, mental well-being, and energy levels."
+        ]
+    }
+]
+
+
