@@ -53,15 +53,16 @@ def main():
     global user_input_counter
     st.set_page_config(page_title="Aura GPT", page_icon="💬", layout="wide")
 
-    # Custom CSS for styling
+    # Custom CSS for dark mode styling
     st.markdown("""
         <style>
             body {
-                background-color: #f9f9f9;
+                background-color: #121212;
+                color: #e0e0e0;
                 font-family: 'Arial', sans-serif;
             }
             .chat-title {
-                color: #4CAF50;
+                color: #76FF03;
                 font-size: 2rem;
                 text-align: center;
                 margin-top: 10px;
@@ -73,9 +74,48 @@ def main():
                 text-align: center;
                 font-size: 0.9rem;
                 color: #888;
+                padding: 10px;
+            }
+            .user-msg {
+                background-color: #1A73E8;
+                color: white;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin: 10px 0;
+                max-width: 70%;
+                margin-left: auto;
+            }
+            .bot-msg {
+                background-color: #333333;
+                color: white;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin: 10px 0;
+                max-width: 70%;
+                margin-right: auto;
+            }
+            .history-container {
+                margin-top: 20px;
+                padding: 20px;
+                background-color: #2C2C2C;
+                border-radius: 10px;
+            }
+            .history-entry {
+                background-color: #424242;
+                color: #e0e0e0;
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .history-entry strong {
+                color: #76FF03;
             }
         </style>
     """, unsafe_allow_html=True)
+
+    # Add the image before the title
+    st.image("img.png", width=200)  # Adjust the path and width as needed
 
     # Title and Header
     st.markdown("<h1 class='chat-title'>Aura GPT: Your Friendly Chatbot</h1>", unsafe_allow_html=True)
@@ -118,10 +158,10 @@ def main():
                 reader = csv.reader(csvfile)
                 next(reader)  # Skip header
                 for row in reader:
-                    st.markdown(f"**User**: {row[0]}")
-                    st.markdown(f"**Chatbot**: {row[1]}")
-                    st.markdown(f"**Time**: {row[2]}")
-                    st.markdown("---")
+                    st.markdown(f"<div class='history-entry'><strong>User</strong>: {row[0]}</div>", unsafe_allow_html=True)
+                    st.markdown(f"<div class='history-entry'><strong>Chatbot</strong>: {row[1]}</div>", unsafe_allow_html=True)
+                    st.markdown(f"<div class='history-entry'><strong>Time</strong>: {row[2]}</div>", unsafe_allow_html=True)
+                    st.markdown("<hr>", unsafe_allow_html=True)
         except FileNotFoundError:
             st.write("No conversation history found.")
 
@@ -137,6 +177,9 @@ def main():
         - **Streamlit Interface**: User-friendly and interactive.
         - **Conversation Logs**: Records chats for reference.
         """)
+
+    # Add image near the footer
+    st.image("img.png", width=100)  # Adjust the path and width as needed
 
     # Footer
     st.markdown("<div class='footer'>Developed with ❤️ using Streamlit</div>", unsafe_allow_html=True)
