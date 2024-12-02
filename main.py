@@ -51,6 +51,8 @@ user_input_counter = 0
 # Main application function
 def main():
     global user_input_counter
+
+    # Set page config first
     st.set_page_config(page_title="Aura GPT", page_icon="💬", layout="wide")
 
     # Custom CSS for dark mode styling
@@ -115,7 +117,7 @@ def main():
     """, unsafe_allow_html=True)
 
     # Add the image before the title
-    st.image("img.png", width=200)  # Adjust the path and width as needed
+    st.image("img.png", width=100)  # Adjust the path and width as needed
 
     # Title and Header
     st.markdown("<h1 class='chat-title'>Aura GPT: Your Friendly Chatbot</h1>", unsafe_allow_html=True)
@@ -178,8 +180,8 @@ def main():
         - **Conversation Logs**: Records chats for reference.
         """)
 
-
-    # Footer
+    # Footer content
+    st.markdown("<div class='thanks-above-footer'>Thanks for using</div>", unsafe_allow_html=True)
     st.markdown("<div class='footer'>Developed with ❤️ using Streamlit</div>", unsafe_allow_html=True)
 
 if __name__ == '__main__':
