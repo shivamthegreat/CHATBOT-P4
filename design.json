@@ -393,7 +393,248 @@
             "To stay fit, combine cardio, strength training, flexibility exercises, and maintain a balanced diet.",
             "Exercise is crucial for physical health, mental well-being, and energy levels."
         ]
-    }
+    },{
+    "intents": [
+        {
+            "tag": "exercise",
+            "patterns": [
+                "How can I stay fit?",
+                "What should I know about exercise?",
+                "Why is physical activity important?"
+            ],
+            "responses": [
+                "Staying fit is all about finding a balance between cardio, strength training, and flexibility exercises—plus eating well.",
+                "Regular exercise keeps your body strong, your mind sharp, and boosts your energy!"
+            ]
+        },
+        {
+            "tag": "mindfulness",
+            "patterns": [
+                "What is mindfulness?",
+                "Can you share mindfulness techniques?",
+                "How do I start practicing mindfulness?"
+            ],
+            "responses": [
+                "Mindfulness means being present in the moment and noticing your thoughts and feelings without judgment.",
+                "You can try mindfulness by meditating, deep breathing, or even paying attention to small things like your food or surroundings."
+            ]
+        },
+        {
+            "tag": "science",
+            "patterns": [
+                "What is science?",
+                "Which branch of science do you like?",
+                "How does science affect our daily lives?"
+            ],
+            "responses": [
+                "Science is all about understanding the world around us through observation and experiments.",
+                "Science helps us live better—it’s behind modern medicine, technology, and even everyday things like weather forecasts!"
+            ]
+        },
+        {
+            "tag": "gaming",
+            "patterns": [
+                "Do you like video games?",
+                "Can you tell me about gaming?",
+                "What’s a good game to play?"
+            ],
+            "responses": [
+                "I don’t play games, but I know a lot about them! Gaming is a fun way to relax and challenge yourself.",
+                "Whether you like action, adventure, or strategy, there’s a game out there for everyone!"
+            ]
+        },
+        {
+            "tag": "positivity",
+            "patterns": [
+                "Share something positive.",
+                "Can I have a positive quote?",
+                "How can I stay optimistic?"
+            ],
+            "responses": [
+                "Every day brings new opportunities—believe in yourself and keep moving forward!",
+                "You are stronger than you think and capable of amazing things."
+            ]
+        },
+        {
+            "tag": "cooking",
+            "patterns": [
+                "What is cooking?",
+                "Do you have cooking tips?",
+                "What’s a beginner-friendly dish?"
+            ],
+            "responses": [
+                "Cooking is a creative way to prepare and enjoy delicious food. It’s an art anyone can learn!",
+                "Start simple, use fresh ingredients, and don’t be afraid to experiment. Cooking gets better with practice!"
+            ]
+        },
+        {
+            "tag": "relationship",
+            "patterns": [
+                "How do I maintain a good relationship?",
+                "What is love?",
+                "Do you have relationship advice?"
+            ],
+            "responses": [
+                "Healthy relationships are built on trust, communication, and respect.",
+                "Love is about connection, understanding, and growing together."
+            ]
+        },
+        {
+            "tag": "nature",
+            "patterns": [
+                "What’s so special about nature?",
+                "Do you have a favorite natural wonder?",
+                "How can we help the environment?"
+            ],
+            "responses": [
+                "Nature is amazing—it’s full of beauty, from mountains and forests to oceans and wildlife.",
+                "Protecting the environment starts with small actions, like reducing waste and conserving water."
+            ]
+        },
+        {
+            "tag": "productivity",
+            "patterns": [
+                "How can I be more productive?",
+                "What’s good time management?",
+                "Share some productivity tips."
+            ],
+            "responses": [
+                "Focus on your priorities, avoid distractions, and take regular breaks to recharge.",
+                "Plan your day, set realistic goals, and celebrate small wins along the way."
+            ]
+        },
+        {
+            "tag": "travel_tips",
+            "patterns": [
+                "What should I know before traveling?",
+                "How do I pack for a trip?",
+                "Any tips for traveling?"
+            ],
+            "responses": [
+                "Pack light, keep your documents handy, and research your destination beforehand.",
+                "Be curious, respectful, and open to new experiences—you’ll create amazing memories!"
+            ]
+        },
+        {
+            "tag": "languages",
+            "patterns": [
+                "What’s cool about languages?",
+                "How can I learn a new language?",
+                "Why is being multilingual important?"
+            ],
+            "responses": [
+                "Languages let us connect with people and cultures. There are thousands of them in the world!",
+                "To learn a new language, start with basics like greetings and practice a little every day."
+            ]
+        },
+        {
+            "tag": "inspiration",
+            "patterns": [
+                "I need inspiration.",
+                "Tell me an inspiring story.",
+                "How can I stay motivated?"
+            ],
+            "responses": [
+                "Believe in yourself! Every step forward, no matter how small, gets you closer to your goals.",
+                "Challenges are chances to grow. Keep pushing—you’ve got this!"
+            ]
+        },
+        {
+            "tag": "finance_tips",
+            "patterns": [
+                "How do I manage money?",
+                "Can you share finance tips?",
+                "What’s a good way to save?"
+            ],
+            "responses": [
+                "Set a budget, save a little every month, and spend only on what really matters.",
+                "Investing in things like stocks or mutual funds can help grow your money over time."
+            ]
+        },
+        {
+            "tag": "artificial_intelligence",
+            "patterns": [
+                "What is AI?",
+                "How does AI work?",
+                "What’s AI used for?"
+            ],
+            "responses": [
+                "AI is like teaching machines to think and learn like humans.",
+                "You can find AI in everyday things like voice assistants, self-driving cars, and even movie recommendations."
+            ]
+        },
+        {
+            "tag": "motivation",
+            "patterns": [
+                "Can you motivate me?",
+                "Share an encouraging thought.",
+                "How do I face challenges?"
+            ],
+            "responses": [
+                "You are capable of great things! Take one step at a time and keep moving forward.",
+                "Every challenge is an opportunity to grow. Stay strong—you’ll get through it!"
+            ]
+        },
+        {
+            "tag": "future",
+            "patterns": [
+                "What will the future be like?",
+                "Tell me about future technology.",
+                "What’s exciting about the future?"
+            ],
+            "responses": [
+                "The future is full of possibilities—think smarter technology, renewable energy, and maybe even space travel!",
+                "It’s exciting to imagine how science and creativity will shape the world ahead."
+            ]
+        },
+        {
+            "tag": "movies_series",
+            "patterns": [
+                "Can you recommend a movie?",
+                "What are good TV series to watch?",
+                "Tell me about movies or shows."
+            ],
+            "responses": [
+                "There’s a show or movie for everyone, whether you love drama, comedy, or sci-fi!",
+                "Watching movies or series is a great way to relax and dive into exciting stories."
+            ]
+        },
+        {
+            "tag": "self_improvement",
+            "patterns": [
+                "How can I grow as a person?",
+                "What’s personal growth?",
+                "Any tips for self-development?"
+            ],
+            "responses": [
+                "Personal growth is about learning new skills, staying positive, and taking care of yourself.",
+                "Set goals, embrace challenges, and keep working on becoming your best self."
+            ]
+        },
+        {
+            "tag": "robotics",
+            "patterns": [
+                "What is robotics?",
+                "How do robots work?",
+                "What’s the future of robotics?"
+            ],
+            "responses": [
+                "Robotics is about creating machines that can do tasks, sometimes even on their own!",
+                "In the future, robots might work alongside humans in more industries like healthcare and space."
+            ]
+        },
+        {
+            "tag": "philosophy",
+            "patterns": [
+                "What is philosophy?",
+                "Why do we ask big questions?",
+                "What’s the purpose of life?"
+            ],
+            "responses": [
+                "Philosophy is all about asking questions like ‘Why are we here?’ or ‘What is good?’",
+                "It helps us think deeply about life, values, and the world around us."
+            ]
+        }
 ]
 
 
