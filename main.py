@@ -1,4 +1,3 @@
-#importing all required modules(libraries)
 import json
 import os
 import csv
@@ -6,6 +5,7 @@ import datetime
 import random
 import ssl
 import streamlit as st
+from streamlit_chat import message  # Install streamlit-chat for chat bubbles
 import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -27,10 +27,10 @@ classifier = LogisticRegression(random_state=0, max_iter=10000)
 # Prepare data for training
 tags = []
 patterns = []
-for design in design:
-    for pattern in design['patterns']:
+for design_item in design:
+    for pattern in design_item['patterns']:
         patterns.append(pattern)
-        tags.append(design['tag'])
+        tags.append(design_item['tag'])
 
 # Train the model
 X = vectorizer.fit_transform(patterns)
@@ -41,9 +41,9 @@ classifier.fit(X, y)
 def chatbot_response(user_input):
     input_vector = vectorizer.transform([user_input])
     predicted_tag = classifier.predict(input_vector)[0]
-    for design in design:
-        if design['tag'] == predicted_tag:
-            return random.choice(design['responses'])
+    for design_item in design:
+        if design_item['tag'] == predicted_tag:
+            return random.choice(design_item['responses'])
 
 # Counter for input keys
 user_input_counter = 0
@@ -51,17 +51,43 @@ user_input_counter = 0
 # Main application function
 def main():
     global user_input_counter
-    st.title("Chatbot Using NLP")
+    st.set_page_config(page_title="Aura GPT", page_icon="💬", layout="wide")
+
+    # Custom CSS for styling
+    st.markdown("""
+        <style>
+            body {
+                background-color: #f9f9f9;
+                font-family: 'Arial', sans-serif;
+            }
+            .chat-title {
+                color: #4CAF50;
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 0.9rem;
+                color: #888;
+            }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Title and Header
+    st.markdown("<h1 class='chat-title'>Aura GPT: Your Friendly Chatbot</h1>", unsafe_allow_html=True)
 
     # Sidebar menu
-    menu = ["Dashboard", "History", "About"]
+    menu = ["Chat", "History", "About"]
     menu_choice = st.sidebar.selectbox("Navigate", menu)
 
-    if menu_choice == "Dashboard":
-        st.write("Welcome! This is Aura_gpt Type your question...")
-
-        # Ensure the chat log file exists
+    if menu_choice == "Chat":
+        st.write("### Welcome! Type your question below:")
         log_file = 'auralogs.csv'
+
         if not os.path.exists(log_file):
             with open(log_file, 'w', newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
@@ -72,7 +98,8 @@ def main():
 
         if user_message:
             chatbot_reply = chatbot_response(user_message)
-            st.text_area("Chatbot:", value=chatbot_reply, height=150, max_chars=None, key=f"chatbot_reply_{user_input_counter}")
+            message(user_message, is_user=True)  # User message bubble
+            message(chatbot_reply)  # Chatbot message bubble
 
             # Log the interaction
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -81,19 +108,19 @@ def main():
                 writer.writerow([user_message, chatbot_reply, timestamp])
 
             if chatbot_reply.lower() in ['goodbye', 'bye']:
-                st.write("Thank you for chatting! Have a wonderful day!")
+                st.write("### Thank you for chatting! Have a wonderful day!")
                 st.stop()
 
-    elif menu_choice == "Conversation History":
-        st.header("Previous Conversations")
+    elif menu_choice == "History":
+        st.header("Conversation History")
         try:
-            with open('chat_log.csv', 'r', encoding='utf-8') as csvfile:
+            with open('auralogs.csv', 'r', encoding='utf-8') as csvfile:
                 reader = csv.reader(csvfile)
                 next(reader)  # Skip header
                 for row in reader:
-                    st.text(f"User: {row[0]}")
-                    st.text(f"Chatbot: {row[1]}")
-                    st.text(f"Time: {row[2]}")
+                    st.markdown(f"**User**: {row[0]}")
+                    st.markdown(f"**Chatbot**: {row[1]}")
+                    st.markdown(f"**Time**: {row[2]}")
                     st.markdown("---")
         except FileNotFoundError:
             st.write("No conversation history found.")
@@ -101,20 +128,18 @@ def main():
     elif menu_choice == "About":
         st.subheader("Aura Overview")
         st.write("""
-        This project is a chatbot also called as Aura Gpt designed to identify user intents and respond accordingly.
-        It leverages NLP techniques and machine learning, using logistic regression for intent classification.
+        Aura GPT is a conversational AI chatbot designed to understand user intents and provide meaningful responses.
+        Built with NLP and machine learning, it leverages logistic regression for intent classification.
         """)
         st.subheader("Features")
         st.write("""
-        - **Learning the Data**: The chatbot is trained using labeled examples of user messages and their intents.  
-        - **User-Friendly Design**: The interface, created with Streamlit, makes chatting simple and engaging.  
-        - **Conversation Records**: Keeps a history of chats for easy reference and review.  
+        - **Natural Language Processing**: Understands user input to identify intents.
+        - **Streamlit Interface**: User-friendly and interactive.
+        - **Conversation Logs**: Records chats for reference.
         """)
-   
 
-
-
-
+    # Footer
+    st.markdown("<div class='footer'>Developed with ❤️ using Streamlit</div>", unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
