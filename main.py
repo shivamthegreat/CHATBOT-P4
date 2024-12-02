@@ -178,8 +178,6 @@ def main():
         - **Conversation Logs**: Records chats for reference.
         """)
 
-    # Add image near the footer
-    st.image("img.png", width=100)  # Adjust the path and width as needed
 
     # Footer
     st.markdown("<div class='footer'>Developed with ❤️ using Streamlit</div>", unsafe_allow_html=True)
