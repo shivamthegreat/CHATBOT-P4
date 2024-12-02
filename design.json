@@ -394,8 +394,6 @@
             "Exercise is crucial for physical health, mental well-being, and energy levels."
         ]
     },{
-    "intents": [
-        {
             "tag": "exercise",
             "patterns": [
                 "How can I stay fit?",
