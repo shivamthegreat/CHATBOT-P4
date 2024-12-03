@@ -1,5 +1,0 @@
-nltk
-streamlit
-scikit-learn
-datetime
-os
