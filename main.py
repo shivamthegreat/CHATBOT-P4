@@ -5,6 +5,7 @@ import datetime
 import random
 import ssl
 import streamlit as st
+from streamlit_chat import message  # Install streamlit-chat for chat bubbles
 import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -139,10 +140,8 @@ def main():
 
         if user_message:
             chatbot_reply = chatbot_response(user_message)
-
-            # Display user and bot messages with Streamlit native widgets
-            st.markdown(f'<div class="user-msg">{user_message}</div>', unsafe_allow_html=True)
-            st.markdown(f'<div class="bot-msg">{chatbot_reply}</div>', unsafe_allow_html=True)
+            message(user_message, is_user=True)  # User message bubble
+            message(chatbot_reply)  # Chatbot message bubble
 
             # Log the interaction
             timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
