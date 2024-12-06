@@ -671,7 +671,21 @@
                 "Philosophy is all about asking questions like ‘Why are we here?’ or ‘What is good?’",
                 "It helps us think deeply about life, values, and the world around us."
             ]
-        }
+        },
+     {
+        "tag": "hour",
+        "patterns": [
+            "how many hours in a day",
+            "how many hours in a clock ",
+            "what is time ",
+            "how many hours in a day "
+        ],
+        "responses": [
+            "24 hours .",
+            " there are 24 hours in a day",
+            "twenty four master"
+        ]
+    }
     ]
         
 
