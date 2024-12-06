@@ -337,18 +337,7 @@
             "To study effectively, set clear goals, create a quiet study environment, stay organized, take breaks, and don't hesitate to ask for help when needed."
         ]
     },
-    {
-        "tag": "health",
-        "patterns": [
-            "How to stay healthy?",
-            "Tell me about health tips.",
-            "What's the importance of fitness?"
-        ],
-        "responses": [
-            "To stay healthy, maintain a balanced diet, exercise regularly, sleep well, manage stress, and avoid harmful habits.",
-            "Fitness is important for your overall health. It helps improve mood, energy levels, and longevity."
-        ]
-    },
+
     {
         "tag": "coding",
         "patterns": [
@@ -419,18 +408,6 @@
         "responses": [
             "I don't have personal preferences, but there are many music genres like pop, rock, classical, jazz, and more.",
             "Music can uplift your mood, inspire creativity, and bring people together across cultures."
-        ]
-    },
-    {
-        "tag": "exercise",
-        "patterns": [
-            "How to stay fit?",
-            "Tell me about exercise.",
-            "What's the importance of physical activity?"
-        ],
-        "responses": [
-            "To stay fit, combine cardio, strength training, flexibility exercises, and maintain a balanced diet.",
-            "Exercise is crucial for physical health, mental well-being, and energy levels."
         ]
     },
         {
