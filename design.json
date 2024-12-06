@@ -673,10 +673,10 @@
             ]
         },
      {
-        "tag": "hour",
+        "tag": "hours",
         "patterns": [
             "how many hours in a day",
-            "how many hours in a clock ",
+            "how many hours in a clock",
             "what is time ",
             "how many hours in a day "
         ],
