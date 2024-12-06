@@ -432,18 +432,7 @@
             "To stay fit, combine cardio, strength training, flexibility exercises, and maintain a balanced diet.",
             "Exercise is crucial for physical health, mental well-being, and energy levels."
         ]
-    },{
-            "tag": "exercise",
-            "patterns": [
-                "How can I stay fit?",
-                "What should I know about exercise?",
-                "Why is physical activity important?"
-            ],
-            "responses": [
-                "Staying fit is all about finding a balance between cardio, strength training, and flexibility exercises—plus eating well.",
-                "Regular exercise keeps your body strong, your mind sharp, and boosts your energy!"
-            ]
-        },
+    },
         {
             "tag": "mindfulness",
             "patterns": [
@@ -685,7 +674,72 @@
             "there are 24 hours in a day",
             "twenty four master"
         ]
-    }
+    },
+    {
+            "tag": "days_month",
+            "patterns": [
+                "How many days in a month?",
+                "Which months have 30 days?",
+                "Are all months the same?"
+            ],
+            "responses": [
+                "Most months have 30 or 31 days, but February usually has 28 and 29 in leap years!",
+                "Thirty days hath September, April, June, and November.",
+                "February is special—28 days, or 29 if it’s a leap year."
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "What’s the weather today?",
+                "Will it rain today?",
+                "How’s the temperature?"
+            ],
+            "responses": [
+                "Check your local forecast or use a weather app for real-time updates.",
+                "It might be sunny, cloudy, or rainy—be prepared!",
+                "Always carry an umbrella if you're unsure!"
+            ]
+        },
+        {
+            "tag": "space",
+            "patterns": [
+                "What is space?",
+                "Tell me about the universe.",
+                "Why is space dark?"
+            ],
+            "responses": [
+                "Space is the vast expanse that exists beyond Earth’s atmosphere, filled with stars, planets, and galaxies.",
+                "The universe is so vast that we’ve only explored a tiny fraction of it.",
+                "Space appears dark because there’s no atmosphere to scatter light like on Earth."
+            ]
+        },
+        {
+            "tag": "productivity",
+            "patterns": [
+                "How can I stay productive?",
+                "Tips for managing time?",
+                "How to avoid procrastination?"
+            ],
+            "responses": [
+                "Set clear goals, take regular breaks, and focus on one task at a time.",
+                "Prioritize your tasks and use tools like calendars or to-do lists.",
+                "Avoid distractions and stay consistent to build momentum."
+            ]
+        },
+        {
+            "tag": "technology",
+            "patterns": [
+                "What’s new in tech?",
+                "What is 5G?",
+                "How does blockchain work?"
+            ],
+            "responses": [
+                "Tech is evolving fast—think AI, 5G, and quantum computing!",
+                "5G is the next-gen network, offering faster speeds and more connectivity.",
+                "Blockchain is a secure, decentralized system for recording transactions."
+            ]
+        }
     ]
         
 
