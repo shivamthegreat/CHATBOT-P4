@@ -677,12 +677,12 @@
         "patterns": [
             "how many hours in a day",
             "how many hours in a clock",
-            "what is time ",
+            "what is time",
             "how many hours in a day "
         ],
         "responses": [
-            "24 hours .",
-            " there are 24 hours in a day",
+            "24 hours.",
+            "there are 24 hours in a day",
             "twenty four master"
         ]
     }
