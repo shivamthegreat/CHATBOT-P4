@@ -18,7 +18,7 @@ This project involves the development of an intelligent chatbot using Natural La
 
 
 
-### Create a Virtual Environment (Optional but highly Recommended):-)))
+### Create a Virtual Environment
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
